@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { navContent } from './navContent';
 import { Grid, Button, Icon, Paper } from '@material-ui/core';
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import './smallTile.css'
 
 const useStyles = makeStyles((theme) => ({
         root: {
@@ -23,7 +24,7 @@ export default function NavButtons(props){
         return(
                 <Grid item xs={3}>
                         <Paper
-                        classes={{root: classes.root}}>
+                        classes={{root: classes.root}} className="smallTile">
                                 {props.children}
                         </Paper>
                 </Grid>

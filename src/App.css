@@ -84,10 +84,28 @@
   font-family: Poppins;
   font-weight: 400;
   padding-left: 20px;
+  padding-top: 20px;
 }
 
 .recentList{
+  padding-top: 20px;
   list-style: none;
-  padding-left: 100px;
+  padding-left: 200px;
   font-size: large;
+}
+
+.recentList td{
+  padding: 10px 80px 10px 0;
+  color: aliceblue;
+}
+
+.recentList th{
+  color: aliceblue;
+}
+
+.mediumTitle{
+  padding-top: 20px;
+  color: aliceblue;
+  font-family: Poppins;
+  font-weight: 400;
 }

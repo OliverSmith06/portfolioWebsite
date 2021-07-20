@@ -70,8 +70,8 @@ export default class App extends PureComponent {
             {/* </Paper> */}
             <ThemeProvider theme={theme}>
             <HeadTile><span className="HeadTile pageHeader" >Discover</span></HeadTile>
-            <LargeTile><span className="largeTitle">Recently Accessed Projects</span>
-              <table id="customers">
+            <LargeTile><div className="largeTitle">Recently Accessed Projects</div>
+              <table className="recentList">
               <tr>
                 <th>Title</th>
                 <th>Subject</th>
@@ -94,7 +94,7 @@ export default class App extends PureComponent {
               </tr>
             </table>
             </LargeTile>
-            <MediumTile>Featured</MediumTile>
+            <MediumTile><div className="mediumTitle">Featured</div></MediumTile>
             <HeadTile><span className="HeadTile pageSub">Favourites</span></HeadTile>
             <SmallTile></SmallTile>
             <SmallTile></SmallTile>

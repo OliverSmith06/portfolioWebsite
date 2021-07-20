@@ -1,0 +1,8 @@
+.largeTile:hover{
+        background-color: #279cac;
+        cursor: pointer;
+        box-shadow: 6px 6px 6px 6px #181620;
+}
+.largeTile{
+        font-family: Poppins;
+}
