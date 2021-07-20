@@ -79,17 +79,17 @@ export default class App extends PureComponent {
               </tr>
               <tr>
                 <td>Valorant Go! Knife</td>
-                <td>Starting With Speechy</td>
-                <td>This Website</td>
-              </tr>
-              <tr>
                 <td>3D Modelling</td>
-                <td>Speechy</td>
-                <td>Web Development</td>
+                <td>19/07/2021</td>
               </tr>
               <tr>
-                <td>19/07/2021</td>
+                <td>Starting With Speechy</td>
+                <td>Speechy</td>
                 <td>20/07/2021</td>
+              </tr>
+              <tr>
+                <td>This Website</td>
+                <td>Web Development</td>
                 <td>21/07/2021</td>
               </tr>
             </table>
