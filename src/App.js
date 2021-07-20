@@ -85,7 +85,7 @@ export default class App extends PureComponent {
               <tr>
                 <td>3D Modelling</td>
                 <td>Speechy</td>
-                <td>Web Dev</td>
+                <td>Web Development</td>
               </tr>
               <tr>
                 <td>19/07/2021</td>
