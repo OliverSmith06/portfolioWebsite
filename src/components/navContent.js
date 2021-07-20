@@ -35,8 +35,8 @@ export const navContent = [[
             icon: 'mic'
         },
         {
-            title: 'Placeholder',
-            icon: 'image'
+            title: 'Web Development',
+            icon: 'computer'
         },
         {
             title: 'Placeholder',

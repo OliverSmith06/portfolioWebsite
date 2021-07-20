@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { PureComponent } from 'react';
-import { Button, Grid, TextField, Paper, Box, Typography } from '@material-ui/core';
+import { Button, Grid, TextField, Paper, Box, Typography, Icon } from '@material-ui/core';
 // import EmojiResults from "./EmojiResults";
 import SideNav from './components/sideNav';
 import SearchInput from "./components/SearchInput";
@@ -73,21 +73,25 @@ export default class App extends PureComponent {
             <LargeTile><div className="largeTitle">Recently Accessed Projects</div>
               <table className="recentList">
               <tr>
+                <th></th>
                 <th>Title</th>
                 <th>Subject</th>
                 <th>Last Opened</th>
               </tr>
               <tr>
+                <td><Icon>widgets</Icon></td>
                 <td>Valorant Go! Knife</td>
                 <td>3D Modelling</td>
                 <td>19/07/2021</td>
               </tr>
               <tr>
+              <td><Icon>mic</Icon></td>
                 <td>Starting With Speechy</td>
                 <td>Speechy</td>
                 <td>20/07/2021</td>
               </tr>
               <tr>
+              <td><Icon>computer</Icon></td>
                 <td>This Website</td>
                 <td>Web Development</td>
                 <td>21/07/2021</td>
@@ -96,6 +100,7 @@ export default class App extends PureComponent {
             </LargeTile>
             <MediumTile><div className="mediumTitle">Featured</div></MediumTile>
             <HeadTile><span className="HeadTile pageSub">Favourites</span></HeadTile>
+            <SmallTile></SmallTile>
             <SmallTile></SmallTile>
             <SmallTile></SmallTile>
             <SmallTile></SmallTile>
