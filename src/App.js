@@ -104,7 +104,6 @@ export default class App extends PureComponent {
             <SmallTile></SmallTile>
             <SmallTile></SmallTile>
             <SmallTile></SmallTile>
-            <SmallTile></SmallTile>
             </ThemeProvider>
           
         </Grid>
