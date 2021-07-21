@@ -10,6 +10,8 @@ import LargeTile from './components/largeTile';
 import MediumTile from './components/mediumTile';
 import SmallTile from './components/smallTile';
 import HeadTile from './components/headTile';
+import ReactMarkdown from 'react-markdown';
+import RecentItems from './components/recentItems'
 
 const useStyles = makeStyles((theme) => ({}));
 
@@ -71,34 +73,9 @@ export default class App extends PureComponent {
             <ThemeProvider theme={theme}>
             <HeadTile><span className="HeadTile pageHeader" >Discover</span></HeadTile>
             <LargeTile><div className="largeTitle">Recently Accessed Projects</div>
-              <table className="recentList">
-              <tr>
-                <th></th>
-                <th>Title</th>
-                <th>Subject</th>
-                <th>Last Opened</th>
-              </tr>
-              <tr>
-                <td><Icon>widgets</Icon></td>
-                <td>Valorant Go! Knife</td>
-                <td>3D Modelling</td>
-                <td>19/07/2021</td>
-              </tr>
-              <tr>
-              <td><Icon>mic</Icon></td>
-                <td>Starting With Speechy</td>
-                <td>Speechy</td>
-                <td>20/07/2021</td>
-              </tr>
-              <tr>
-              <td><Icon>computer</Icon></td>
-                <td>This Website</td>
-                <td>Web Development</td>
-                <td>21/07/2021</td>
-              </tr>
-            </table>
+            <RecentItems></RecentItems>
             </LargeTile>
-            <MediumTile><div className="mediumTitle">Featured</div></MediumTile>
+            <MediumTile><div className="mediumTitle">Featured<ReactMarkdown>Hello, World</ReactMarkdown></div></MediumTile>
             <HeadTile><span className="HeadTile pageSub">Favourites</span></HeadTile>
             <SmallTile></SmallTile>
             <SmallTile></SmallTile>
