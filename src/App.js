@@ -108,7 +108,16 @@ const Post = ({  post }) => (
     
     <HeadTile><span className="HeadTile pageHeader" >{post.title}</span></HeadTile>
     <HeadTile><span className="HeadTile pageSub">{post.subject}</span></HeadTile>
-    <LargeTile><div className="largeTitle"><ReactMarkdown>{post.description}</ReactMarkdown></div></LargeTile>
+        {Object.keys(post.components).map(key => {
+          if(post.components[key].type == 'largeTile'){
+            return(<LargeTile>{post.components[key].content}</LargeTile>);
+          } else if (post.components[key].type == 'mediumTile'){
+            return(<MediumTile>{post.components[key].content}</MediumTile>);
+          } else if (post.components[key].type == 'smallTile'){
+            return(<SmallTile>{post.components[key].content}</SmallTile>);
+          }
+        })}
+    
     
     </ThemeProvider>
 )
