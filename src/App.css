@@ -96,7 +96,17 @@
 
 .recentList td{
   padding: 10px 80px 10px 0;
+  /* color: aliceblue; */
+}
+
+.recentList tr{
   color: aliceblue;
+}
+
+.recentList tr:hover{
+  color: lightgray;
+  text-decoration: underline;
+  /* font-size: 1.1em; */
 }
 
 .recentList th{
@@ -108,4 +118,13 @@
   color: aliceblue;
   font-family: Poppins;
   font-weight: 400;
+}
+
+.routeLink{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.routeLink:hover{
+    color: lightgray;
 }

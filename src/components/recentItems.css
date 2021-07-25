@@ -1,0 +1,8 @@
+.recentList tr td:hover{
+        cursor: pointer;
+        /* color: black; */
+}
+
+/* .recentList tr{
+        color: greenyellow;
+} */

@@ -1,6 +1,6 @@
 .smallTile:hover{
         background-color: #222431;
-        cursor: pointer;
+        /* cursor: pointer; */
         box-shadow: 3px 3px 3px 3px #181620;
 }
 .smallTile{
