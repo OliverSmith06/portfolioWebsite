@@ -9,7 +9,9 @@ const useStyles = makeStyles((theme) => ({
           height: '50px',
           width: '100%',
           boxShadow: 'none',
-          textAlign:'left'
+          textAlign:'left',
+          color:'aliceblue',
+          marginBottom: '50px',
 
         },
 

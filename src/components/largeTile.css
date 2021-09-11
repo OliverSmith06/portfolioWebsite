@@ -5,4 +5,16 @@
 }
 .largeTile{
         font-family: Poppins;
+        font-size: smaller;
+        color: aliceblue;
+}
+
+.text{
+        /* color: orange; */
+        color: aliceblue;
+        padding: 15px;
+}
+
+#largeText{
+        font-size: 1em;
 }

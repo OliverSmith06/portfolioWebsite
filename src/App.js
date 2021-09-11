@@ -76,7 +76,7 @@ export default class App extends PureComponent {
             <ThemeProvider theme={theme}>
             <Route exact={true} path="/">
               <HeadTile><span className="HeadTile pageHeader" >Discover</span></HeadTile>
-              <LargeTile><div className="largeTitle">Recently Accessed Projects</div>
+              <LargeTile><div className="largeTitle">Featured</div>
               <RecentItems></RecentItems>
               </LargeTile>
               <MediumTile><div className="mediumTitle">Featured<ReactMarkdown>Hello, World</ReactMarkdown></div></MediumTile>
@@ -115,6 +115,12 @@ const Post = ({  post }) => (
             return(<MediumTile>{post.components[key].content}</MediumTile>);
           } else if (post.components[key].type == 'smallTile'){
             return(<SmallTile>{post.components[key].content}</SmallTile>);
+          } else if (post.components[key].type == 'smallImg'){
+            return(<SmallTile image={post.components[key].path}></SmallTile>);
+          } else if (post.components[key].type == 'mediumImg'){
+            return(<MediumTile image={post.components[key].path}></MediumTile>);
+          } else if (post.components[key].type == 'normal'){
+            return(<HeadTile><ReactMarkdown>{post.components[key].content}</ReactMarkdown></HeadTile>);
           }
         })}
     

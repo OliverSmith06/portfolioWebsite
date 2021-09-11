@@ -1,8 +1,13 @@
 .mediumTile:hover{
         background-color: #be7b5c;
-        cursor: pointer;
+        /* cursor: pointer; */
         box-shadow: 6px 6px 6px 6px #181620;
 }
 .mediumTile{
         font-family: Poppins;
+}
+.text{
+        color: aliceblue;
+        padding: 50px;
+        font-size: 0.8em;
 }

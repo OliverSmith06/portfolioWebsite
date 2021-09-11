@@ -128,3 +128,8 @@
 .routeLink:hover{
     color: lightgray;
 }
+
+.pageText {
+  font-size: 20px;
+  /* color: orange; */
+}
