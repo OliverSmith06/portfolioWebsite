@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { navContent } from './navContent';
 import { Grid, Button, Icon } from '@material-ui/core';
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
         root: {
@@ -46,7 +47,9 @@ export default function NavButtons(props){
                         justifyContent="flex-start"
                         alignItems="center"
                         className={classes.navItem}>
-                                <Button variant="contained" className={classes.navButton} color="primary"><Icon>{item.icon}</Icon></Button>
+                                <Link className='routeLink' to={`/f/${item.desc}`}>
+                                        <Button variant="contained" className={classes.navButton} color="primary"><Icon>{item.icon}</Icon></Button>        
+                                </Link>
                                 <span className={classes.navTitle}>{item.title}</span>
                                 
                         </Grid>
